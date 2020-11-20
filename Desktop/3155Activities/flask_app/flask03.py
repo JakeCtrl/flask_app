@@ -53,7 +53,7 @@ def new_note():
         #create new note entry
         notes[id] = {'title': title, 'text': text, 'date': today}
 
-        return redirect(url_for('get_notes', name = user))
+        return redirect(url_for('get_notes', name=a_user))
     else:
         return render_template('new.html', user=a_user)
 
